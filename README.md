@@ -33,16 +33,14 @@ A modern full-stack blogging platform built with **Next.js**, **Prisma**, **Neon
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/blogapp.git
-cd blogapp
+git clone https://github.com/abhishekrajsingh25/ByteCode-Blog-App.git
+cd ByteCode-Blog-App
 ````
 
 ### 2. Install Dependencies
 
 ```bash
 npm install
-# or
-yarn install
 ```
 
 ### 3. Set Up Environment Variables
@@ -54,18 +52,13 @@ Create a `.env` file in the root directory:
 DATABASE_URL="postgresql://<username>:<password>@<host>/<db>?sslmode=require"
 
 # Clerk (Auth)
-CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-CLERK_SECRET_KEY=your_clerk_secret_key
-NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_frontend_api
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
 
 # Cloudinary
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
-
-# App URL
-NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
 
 ### 4. Set Up Prisma
@@ -83,8 +76,6 @@ npx prisma migrate dev --name init
 npm run dev
 ```
 
-Visit: [http://localhost:3000](http://localhost:3000)
-
 ---
 
 ## 🗃️ Folder Structure (Simplified)
@@ -93,9 +84,9 @@ Visit: [http://localhost:3000](http://localhost:3000)
 /app            - App Router structure
 /components     - Reusable components
 /lib            - Utility functions
+/actions        - Server actions
 /prisma         - Prisma schema & client
 /public         - Static assets
-/styles         - Global styles
 ```
 
 ---
@@ -127,37 +118,20 @@ You can deploy this app easily on:
 
 ---
 
-## 🧩 To-Do / Coming Soon
-
-* 🔍 Search & Tag-based filtering
-* 💬 Comments & likes system
-* 📊 Admin dashboard & analytics
-* 🧾 Markdown or rich text editor integration
-
----
-
 ## 🤝 Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Make your changes.
+4. Submit a pull request.
 
 ---
 
-## 📄 License
-
-[MIT](LICENSE)
+Feel free to contribute, suggest features, or open issues.
 
 ---
 
-## 🙌 Acknowledgements
-
-* [Next.js](https://nextjs.org/)
-* [Prisma](https://www.prisma.io/)
-* [NeonDB](https://neon.tech/)
-* [Clerk](https://clerk.dev/)
-* [Cloudinary](https://cloudinary.com/)
-
-```
-
----
-
-Let me know if you’d like a sample `.env`, schema, or deployment guide added!
+Thank you for visiting. I hope you find my work interesting and valuable! To see the Website. 
+- For Frontend, Click <a href="https://bytecode-blogapp-abhishekrajsingh.vercel.app/" >Here</a>.
